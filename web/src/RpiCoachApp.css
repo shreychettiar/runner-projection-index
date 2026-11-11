@@ -1,0 +1,266 @@
+/* RPI Coach App Dark Theme Design Tokens */
+.rpi-container {
+  min-height: 100vh;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 24px;
+}
+
+.rpi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.rpi-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  color: #58a6ff;
+  width: 32px;
+  height: 32px;
+}
+
+.brand-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0f6fc;
+  margin: 0;
+}
+
+.brand-sub {
+  font-size: 13px;
+  color: #8b949e;
+  margin: 2px 0 0 0;
+}
+
+.rpi-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  background: #21262d;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #1f6feb;
+  color: #ffffff;
+  border-color: #388bfd;
+}
+
+.rpi-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+}
+
+.rpi-roster-card, .rpi-detail-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #8b949e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.athlete-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.athlete-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.athlete-item:hover, .athlete-item.selected {
+  border-color: #58a6ff;
+  background: #1c2128;
+}
+
+.ath-name {
+  font-weight: 600;
+  color: #f0f6fc;
+}
+
+.ath-grad {
+  color: #8b949e;
+  font-weight: 400;
+}
+
+.ath-meta {
+  font-size: 12px;
+  color: #8b949e;
+  margin-top: 4px;
+}
+
+.ath-score-badge {
+  text-align: right;
+}
+
+.level-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3fb950;
+  display: block;
+}
+
+.level-tag {
+  font-size: 10px;
+  color: #8b949e;
+  letter-spacing: 0.5px;
+}
+
+/* Detail Card */
+.detail-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-school-tag {
+  font-size: 12px;
+  background: #21262d;
+  border: 1px solid #30363d;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #58a6ff;
+}
+
+.hero-name {
+  font-size: 26px;
+  color: #f0f6fc;
+  margin: 8px 0 4px 0;
+}
+
+.hero-tier {
+  font-size: 14px;
+  color: #3fb950;
+  margin: 0;
+}
+
+.hero-level-box {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-align: right;
+}
+
+.hero-level-val {
+  font-size: 32px;
+  font-weight: 800;
+  color: #3fb950;
+  display: block;
+}
+
+.hero-level-sub {
+  font-size: 11px;
+  color: #8b949e;
+}
+
+.metrics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric-box {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.metric-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #8b949e;
+}
+
+.metric-val {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0f6fc;
+  margin: 8px 0 2px 0;
+  display: block;
+}
+
+.metric-val.highlight {
+  color: #58a6ff;
+}
+
+.metric-sub {
+  font-size: 11px;
+  color: #8b949e;
+}
+
+.tactical-box {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.tactical-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #d29922;
+  margin: 0 0 12px 0;
+}
+
+.tactical-row {
+  display: flex;
+  gap: 40px;
+  font-size: 13px;
+}
+
+.tactical-label {
+  color: #8b949e;
+}
+
+.tactical-value {
+  color: #f0f6fc;
+  font-weight: 600;
+}
